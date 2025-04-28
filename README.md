@@ -118,6 +118,8 @@ Listo, ya vas a poder acceder a utilizar la API.
  - Owner: Tiene acceso a todos los recursos CRUD sobre sus propios POSTS y su propio usuario.
  - User: Tiene acceso a el recurso READ de los posts creados por otros usuarios.
 
+En el caso de la aplicación que les estoy entregando, como no se especificó dentro de los requerimientos crear un sistema de autenticación basado en roles, por seguridad, cada usuario puede solo ver sus propios datos, ver sus propios posts creados, tanto en formato listado general como en formato detalles de un post y solo puede manipular la información de su propio usuario (Update y Delete). No puede acceder a posts creados por otros usuarios ni manipularlos, como tampoco puede acceder a información especifica de otros usuarios dentro de la aplicación.
+
 
  ## Comentarios finales
 
