@@ -99,14 +99,26 @@ b. Simular solicitudes autenticadas mediante JWT.
 
 ### Para poder utilizar swagger vas a tener que seguir una serie de pasos bastante simples.
 
-a. Primero vas a tener que realizar la autenticación. Para autenticarte accedes a la viñeta `Auth`. Dentro vas a encontrar un Endpoint de tipo POST llamado `Login`. Hacer click para desplegar. Luego hacer click en el boton `Try it out`. Dentro del input te va a solicitar un Email y un Password. Seleccionar dentro de la base de datos un usuario al azar. Copiar su email y pegarlo dentro de las comillas. Luego ingresar el password. El seeder está configurado para crear a todos los usuarios con el passowrd `password`.
+a. Primero vas a tener que realizar la autenticación. Para autenticarte deberás acceder a la viñeta `Auth`. Dentro vas a encontrar un Endpoint de tipo POST llamado `Login`. Hacer click para desplegar. Luego hacer click en el botón `Try it out`. Dentro del input te va a solicitar un Email y un Password. Seleccionar dentro de la base de datos un usuario al azar. Copiar su email y pegarlo dentro de las comillas. Luego ingresar el password. El seeder está configurado para crear a todos los usuarios con el password `password`.
 
 b. Una vez que te hayas logueado, el servidor dentro de la respuesta te va a devolver un token de acceso JWT. Copiar ese token (sin incluir las comillas) y dirigirse a la parte superior de la página. En la parte derecha vas a encontrar un recuadro que dice `Authorize`. Pegar el token creado dentro de el input y clickear en el botón `Loguear`. Una vez logueado cerrar la ventana. 
 
 Listo, ya vas a poder acceder a utilizar la API.
+
+### Como versión alternativa o complementaria, también podes crear tu propio usuario a través del Endpoint `Register`. Deberás ingresar un nombre, un email y un password. Luego deberás loguearte de igual manera y seguir los pasos indicados en el apartado anterior para hacer la autenticación y cargar el JWT Token generado en el apartado de Authorize.
 
 
 ## 8. **Consideración de mejoras**
 
  Se puede implementar autenticación basada en roles. De esta manera se podrían determinar los accesos de una manera más eficiente. Ejemplo de roles sugeridos: Admin, Owner, User.
  Cada Role daría acceso a determinados recursos y privaría de acceso a otros tantos. Excepto el Admin que tendría el nivel más alto y por lo tanto acceso a todos los recursos.
+ 
+ ### Por ejemplo: 
+ - Admin: Tiene acceso a todos los recursos CRUD tanto para usuarios como para posts.
+ - Owner: Tiene acceso a todos los recursos CRUD sobre sus propios POSTS y su propio usuario.
+ - User: Tiene acceso a el recurso READ de los posts creados por otros usuarios.
+
+
+ ## Comentarios finales
+
+ Ante cualquier duda o inconveniente, comunicarse conmigo a lucasaciminelli@gmail.com
