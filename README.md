@@ -99,7 +99,7 @@ b. Simular solicitudes autenticadas mediante JWT.
 
 ### Para poder utilizar swagger vas a tener que seguir una serie de pasos bastante simples.
 
-a. Primero vas a tener que Loguearte. Para loguearte accedes a la viñeta `Auth`. Dentro vas a encontrar un Endpoint de tipo POST llamado `Login`. Hacer click para desplegar. Luego hacer click en el boton `Try it out`. Dentro del input te va a solicitar un Email y un Password. Seleccionar dentro de la base de datos un usuario al azar. Copiar su email y pegarlo dentro de las comillas. Luego ingresar el password. El seeder está configurado para crear a todos los usuarios con el passowrd `password`.
+a. Primero vas a tener que realizar la autenticación. Para autenticarte accedes a la viñeta `Auth`. Dentro vas a encontrar un Endpoint de tipo POST llamado `Login`. Hacer click para desplegar. Luego hacer click en el boton `Try it out`. Dentro del input te va a solicitar un Email y un Password. Seleccionar dentro de la base de datos un usuario al azar. Copiar su email y pegarlo dentro de las comillas. Luego ingresar el password. El seeder está configurado para crear a todos los usuarios con el passowrd `password`.
 
 b. Una vez que te hayas logueado, el servidor dentro de la respuesta te va a devolver un token de acceso JWT. Copiar ese token (sin incluir las comillas) y dirigirse a la parte superior de la página. En la parte derecha vas a encontrar un recuadro que dice `Authorize`. Pegar el token creado dentro de el input y clickear en el botón `Loguear`. Una vez logueado cerrar la ventana. 
 
