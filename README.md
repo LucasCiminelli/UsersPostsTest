@@ -53,9 +53,9 @@ Esto va a generar un archivo .env con las variables de entorno. Las claves de co
 
 ### Deberás asegurarte de configurar correctamente los valores de los siguientes campos en caso de ser necesario:
 
-`DB_DATABASE=nombre_de_tu_base_de_datos`
-`DB_USERNAME=tu_usuario_de_base_de_datos`
-`DB_PASSWORD=tu_password`
+- `DB_DATABASE=nombre_de_tu_base_de_datos`
+- `DB_USERNAME=tu_usuario_de_base_de_datos`
+- `DB_PASSWORD=tu_password`
 
 En caso de usar un motor de base de datos que no sea mysql (configurado por defecto en mi archivo .env), modificar el valor de la variable de entorno`DB_CONNECTION=mysql` según corresponda.
 
