@@ -48,8 +48,8 @@ Esto va a generar un archivo .env con las variables de entorno. Las claves de co
 
 ### Para generar estas claves debes ejecutar los siguientes comandos:
 
-`php artisan key:generate` para generar la APP_KEY
-`jwt:secret` para generar el JWT_SECRET
+- `php artisan key:generate` para generar la APP_KEY
+- `jwt:secret` para generar el JWT_SECRET
 
 ### Deberás asegurarte de configurar correctamente los valores de los siguientes campos en caso de ser necesario:
 
