@@ -25,7 +25,7 @@ c. Dentro de la terminal ejecutar el siguiente comando:
 `git clone https://github.com/LucasCiminelli/UsersPostsTest`
 
 
-Luego escribir el comando `cd UsersPostTest` para acceder al proyecto
+Luego escribir el comando `cd UsersPostsTest` para acceder al proyecto
 
 
 ## 2. **Instalar dependencias**
